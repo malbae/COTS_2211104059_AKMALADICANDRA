@@ -1,0 +1,44 @@
+name: cots_project
+description: "A new Flutter project."
+# Prevent the package from being accidentally published to pub.dev
+publish_to: 'none'
+
+# Application version
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.6.5 # Tambahkan GetX untuk state management
+  flutter_svg: ^2.0.7 # Tambahkan untuk ikon SVG
+  intl: ^0.18.0 # Tambahkan intl untuk date formatting
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Define assets
+  assets:
+    - lib/design_system/icons/
+    - lib/design_system/images/cr1.png
+    - lib/design_system/images/cr2.png
+    - lib/design_system/images/lgn.png
+    - lib/design_system/images/ad_image.png
+    - lib/design_system/images/sts.png
+
+  # Define custom fonts
+  fonts:
+    - family: SFProText
+      fonts:
+        - asset: lib/design_system/fonts/SF-Pro-Text-Bold.otf
+          weight: 700
+        - asset: lib/design_system/fonts/SF-Pro-Text-Medium.otf
+          weight: 500
